@@ -1,0 +1,29 @@
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 120px auto;
+    height: 550px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px 0 20px;
+}
+
+.container h1{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.schedule-table-container{
+    width: 65%;
+    height: calc(100% - 40px);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 20px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

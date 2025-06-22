@@ -1,0 +1,43 @@
+.sidebar-list li{
+    width: 120%;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    border: 1px solid rgb(228, 228, 228);
+    border-radius: 5px;
+    padding: 15px 20px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: darkgray;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: all 0.3s ease;
+}
+
+.sidebar-list li i {
+    font-size: 1rem;
+    color: #666;
+}
+
+.sidebar-list li:first-child{
+    margin-top: 20px;
+}
+
+.sidebar-list li.active {
+    background-color: rgba(242, 238, 227, 0.971);
+    color: rgb(238, 238, 238);
+}
+
+.sidebar-list li.active i {
+    color: rgb(238, 238, 238);
+}
+
+.sidebar-list li:hover{
+    background-color: rgba(242, 238, 227, 0.971);
+    color: rgb(238, 238, 238);
+    cursor: pointer;
+}
+
+.sidebar-list li:hover i {
+    color: rgb(238, 238, 238);
+}

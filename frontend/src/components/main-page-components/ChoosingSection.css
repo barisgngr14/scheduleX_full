@@ -1,0 +1,96 @@
+.choosing-section {
+    opacity: 0;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(100%, -50%);
+    width: 95%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    text-align: center;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    transition: transform 1s ease, opacity 0.5s ease;
+}
+
+.choosing-section.slide-in {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+}
+
+.choosing-section.slide-out {
+    transform: translate(-100%, -50%);
+    opacity: 0;
+}
+
+.choosing-section span {
+    color: white;
+    font-size: 1.2rem;
+    position: relative;
+    padding: 0 20px;
+}
+
+
+.login-button {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    position: relative;
+    width: 220px;
+}
+
+.login-button button {
+    padding: 10px 5px;
+    font-size: 1rem;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.login-button button:hover {
+    background-color: white;
+    color: black;
+}
+
+.login-button::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.register-button {
+    display: flex;
+    align-items: center;
+}
+
+.register-button button {
+    width: 220px;
+    padding: 10px 5px;
+    font-size: 1rem;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.register-button button:hover {
+    background-color: white;
+    color: black;
+}

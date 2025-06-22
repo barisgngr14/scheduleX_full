@@ -1,0 +1,36 @@
+.container{
+    width: 80%;
+    margin: 120px auto;
+    height: 550px;
+    text-align: left;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+}
+
+.container h1{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.left-container{
+    width: 35%;
+    height: calc(100% - 40px);
+    background-color: #FFFFFF;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 20px;
+    border-right: 1px solid rgb(250, 245, 245);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.right-container{
+    width: 65%;
+    height: calc(100% - 40px);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    overflow: auto;
+    overflow-x: hidden;
+}

@@ -1,0 +1,127 @@
+.register-button {
+    display: flex;
+    align-items: center;
+}
+
+.register-button button {
+    width: 220px;
+    padding: 10px 5px;
+    font-size: 1rem;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.register-button button:hover {
+    background-color: white;
+    color: black;
+}
+
+.register-form {
+    opacity: 0;
+    position: fixed;
+    top: 55%;
+    left: 50%;
+    transform: translate(100%, -50%);
+    width: 95%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    text-align: center;
+    z-index: 2;
+    transition: transform 1s ease, opacity 0.5s ease;
+}
+
+.register-form.slide-in {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+}
+
+.register-form.slide-out {
+    transform: translate(100%, -50%);
+    opacity: 0;
+}
+
+.back-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 5px;
+}
+
+.back-button:hover {
+    transform: translateX(-5px);
+    color: black;
+}
+
+
+.register-form h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.register-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.name-surname {
+    display: flex;
+    gap: 20px;
+}
+
+.name-surname input {
+    flex: 1;
+}
+
+.register-form input {
+    padding: 12px 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.register-form input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.register-form input:focus {
+    outline: none;
+    border-color: white;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.register-form button {
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.register-form button:hover {
+    background-color: white;
+}
+
+.register-form button i:hover {
+    color: black;
+}

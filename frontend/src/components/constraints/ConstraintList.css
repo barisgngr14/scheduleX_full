@@ -1,0 +1,71 @@
+.constraints ul li{
+    width: 100%;
+    font-size: 1rem;
+    border: 1px solid rgb(228, 228, 228);
+    height: 80px;
+    padding: 15px 20px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.constraints ul {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.constraints ul li img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.constraints ul li span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.constraints ul li:first-child{
+    border-top-right-radius: 10px;
+}
+
+.constraints ul li:last-child{
+    border-bottom-right-radius: 10px;
+}
+
+.constraints ul li:hover{
+    background-color: rgba(242, 238, 227, 0.971);
+    color: rgb(238, 238, 238);
+    cursor: pointer;
+}
+
+.constraints ul li img{
+    width: 50px;
+    height: 50px; 
+}
+
+.expand-button{
+    margin-left: auto;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+.add-button{
+    background-color: white;
+    color: black;
+    border: 1px solid rgb(21, 19, 19);
+    box-shadow: 0 0 10px 0 rgba(241, 236, 236, 0.1);
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    width: fit-content;
+    margin: 10px auto;
+    transition: opacity 0.3s ease-in-out;
+}

@@ -1,0 +1,27 @@
+.logs {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: white;
+    height: 200px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: calc(100% - 40px);
+}
+
+.logs h2 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.logs-line {
+    height: 2px;
+    background-color: #e0e0e0;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+
+.logs-container p{ 
+    color: gray;
+}
